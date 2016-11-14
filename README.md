@@ -1,3 +1,3 @@
 # tiy-home-sass
 
-http://massengillashley.github.io/tiy-home-sass
+https://ashleymassengill.github.io/tiy-home-sass/
