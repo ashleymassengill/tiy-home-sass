@@ -1,0 +1,79 @@
+@import "variables";
+@import "mixins";
+
+*{
+  font-family: sans-serif;
+  font-weight: 400;
+  color: $Text-color;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header{
+  background-color: $Primary-Color;
+  height: 133px;
+  ul{
+    @include verticalcenter;
+    li{
+      display: inline;
+      padding: 30px;
+      font-size: 13px;
+      a{
+        text-decoration: none;
+        position: relative;
+        bottom: 40px;
+      }
+      a:hover{
+        color: $Secondary-Color;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
+
+button{
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 7px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.hero{
+  background: url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=0404a6987743c9f447f3abde5e2a34d8) no-repeat top left;
+  background-size: cover;
+  height: 500px;
+  .hero-text{
+    @include verticalcenter;
+    h1{
+      font-size: 60px;
+    }
+    button:hover{
+      background-color: $Secondary-Color;
+    }
+  }
+}
+
+.banner{
+  background-color: $Secondary-Color;
+  height: 200px;
+  .banner-text{
+    width: 1008px;
+    margin: 0 auto;
+    @include verticalcenter;
+    h3{
+      font-size: 25px;
+    }
+    button{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    button:hover{
+      background-color: $Text-color;
+    }
+  }
+}
